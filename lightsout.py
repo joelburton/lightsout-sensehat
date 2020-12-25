@@ -46,9 +46,6 @@ class Game():
             else self.CURSOR_OFF)
         sense.set_pixels(pixels)
         
-        print(self.board)
-        print(sense.get_pixels())
-
     def play(self):
         while True:
             [_, dir, action] = sense.stick.wait_for_event()
